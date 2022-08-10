@@ -174,7 +174,7 @@ function themesColors() {
         document.querySelector("[data-js-themes-color=" + localStorage.getItem("color") + "]").classList.add("active");
 
     }
-    if (localStorage.getItem !== null) {
+    if (localStorage.getItem("color") !== null) {
         setColors();
     } else {
         const dufaultColor = colorStyle.getAttribute("href").split("/").pop().split(".").shift();
